@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url(img/frnds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.nav-bar{
+    display: inline-block;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgb(179, 179, 179), rgba(0, 0, 0, 0));
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+}
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    top: 0;
+    margin-top: -30px;
+    margin-right: 60px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: azure;
+}
+nav img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 90px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(83, 84, 85);
+    padding: 0.7em;
+    transition: 0.2s;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: rgba(54, 53, 53, 0.007);
+    bottom: 0;
+    border-bottom: rgba(255, 255, 255, 0.76) solid;
+    border-left: rgba(255, 255, 255, 0.76) solid;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.wlc{
+    display: flex;
+    justify-content: space-between;
+}
+.pedi{
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 120px;
+    height: fit-content;
+    text-align: left;
+    width: 60vh;
+    font-size: larger;
+}
+.pedi h1{
+    color: rgb(83, 84, 85);
+    font-family: 'Rubik Microbe', cursive;
+    margin-bottom: 10px;
+}
+.pedi p{
+    color: rgb(83, 84, 85);
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.illu{
+    margin-right: 60px;
+    margin-top: 80px;
+    height: 40vh;
+    width: 60vh;
+    background-image: url(img/pup.jpg);
+    background-size: cover;
+    text-align: center;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transition: 0.7s;
+}
+.illu p{
+    margin-top: 34vh;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(184, 186, 190);
+}
+.illu:hover{
+    transform: scale(1.05);
+    border-bottom: rgba(255, 255, 255, 0.76) solid;
+    border-left: rgba(255, 255, 255, 0.76) solid;
+    border-width: 7px;
+}
+button{
+    transition: 0.5s;
+    margin-top: 50px;
+    background-color: rgb(83, 84, 85);
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -8px black;
+    cursor: pointer;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+}
+button{
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.7s;
+    position: relative;
+}
+/*button::after{
+    content: ">>";
+    position: absolute;
+    top: 16px;
+    right: -20px;
+    transition:0.5s;
+    opacity: 0;
+}*/
+button:hover{
+    background-image:linear-gradient(45deg, white, rgb(83, 84, 85));
+    background-blend-mode: soft-light;
+    transform: scale(1.08);
+}
+/*button:hover::after{
+    opacity:1;
+    right: 10px;
+}*/
+.scnd1{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+.scnd{
+    height: fit-content;
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(83, 84, 85);
+}
+.scndh{
+    margin-top: 50px;
+    font-family: cursive;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.76);
+}
+.scnd1 div{
+    height: fit-content;
+    width: 15%;
+}
+.scnd1 div img{
+    height: 30vh;
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 0.2s;
+}
+.scnd1 div img:hover{
+    transform: scale(1.2);
+    border: 5px solid rgba(255, 255, 255, 0.76);
+}
+.scnd1 div p{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.76);
+    font-style: italic;
+}
+.quote{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 139, 139, 0.76);
+}
+.quote div{
+    width: 80vh;
+    text-align: right;
+    font-family: cursive;
+    color: rgb(83, 84, 85);
+    margin-top: 20px;
+}
+cite{
+    font-size: 30px;
+}
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+    font-size: 20px;
+    font-style: italic;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+/*blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    /*float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}*/
+.snr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(83, 84, 85);
+}
+.snr div{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.76);
+    justify-content: space-between;
+    align-items: center;
+}
+.snr div button{
+    align-items: center;
+    margin: 30px;
+    margin-right: 100px;
+}
+.ab{
+    display: inline-block !important;
+    width: fit-content !important;
+    margin-left: 100px;
+    text-align: left !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: rgb(83, 84, 85);
+}
+.ft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    color: rgb(83, 84, 85);
+    background-color: black;
+    width: 100%;
+}
+/*@media(max-width:700px){
+    .hamburger{
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8.7px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8.7px) rotate(-45deg);
+    }
+    .nav-bar{
+        position: fixed;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: flex;
+        list-style: none;
+        gap: 0px;
+        margin-right: 30px;
+        padding-top: 25px;
+        z-index: 100;
+    }
+    .nav-menu{
+        position: fixed;
+        right: -150%;
+        text-decoration: none;
+        top: 70px;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.055), rgba(46, 45, 45, 0.411));
+        width: 35%;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 2%;
+    }
+    .nav-menu.active{
+        right: -10%;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, 0.829);
+        transition: 0.3s ease;
+        padding: 0.7em;
+        font-size: medium;
+        width: max-content;
+    }
+    nav ul li a:hover{
+        background-color: rgb(54, 53, 53);
+        bottom: 0;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+@media(max-width:850px){
+    .container{
+        background-image: url(img/frnds.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        width: 100%;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, 0.829);
+        transition: 0.3s ease;
+        padding: 0.7em;
+        font-size: small;
+    }
+    .wlc{
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pedi{
+        display: inline-block;
+        margin-top: 170px;
+        height: fit-content;
+        text-align: center;
+        max-width: 19vh;
+        font-size: 10px;
+        text-align: center;
+    }
+    .pedi p{
+        color: rgb(241, 241, 241);
+        font-family: 'Rubik Microbe', cursive;
+        margin-bottom: 10px;
+    }
+    .illu{
+        display: block;
+        position: initial;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        margin-left: 50%;
+        border-radius: 10px;
+    }
+    .illu:hover{
+        border: none;
+    }
+    nav img{
+        margin-left: 10px;
+    }
+    button{
+        height: 40px;
+        width: 100px;
+        top: 0px;
+        margin-right: 9px;
+
+    }
+    .scnd1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .scnd1 div{
+        height: 40px;
+        width: fit-content;
+        text-align: center;
+        margin: 50px;
+    }
+    .scnd1 div img{
+        width: 15vh;
+        height: 15vh;
+    }
+    .scnd{
+        height: 150vh;
+        width: 100%;   
+    }
+    .scndh{
+        font-size: large;
+    }
+    .scnd1 div p{
+        font-size: small;
+    }
+    .quote{
+        height: 50vh;
+        font-size: medium;
+        width: 100%;
+    }
+    .snr div{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.76);
+    }
+    .snr{
+        height: 30vh;
+    }
+    .snr div button{
+        align-items: center;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    .ab{
+        display: inline-block !important;
+        width: fit-content !important;
+        height: fit-content;
+        margin-left: 5px;
+        margin-top: 10px;
+        text-align: left !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: rgb(83, 84, 85);
+    }
+    .ab h1{
+        font-size: large;
+    }
+    .ab h3{
+        font-size: small;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .ft{
+        font-size: small;
+    }
+    
+}*/
